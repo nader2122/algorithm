@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Read the sentence</h1> 
+
+
+
+
+   
+          <script>
+              const str ="Hello every Body Good Morning!"
+function lower(str) {
+  var low = str.toLowerCase();
+  
+   return `lower words is : ${low}`;
+
+ }
+
+console.log(lower(str))
+
+function longStr(str) {
+    var long = str.length;
+    return `length of string is: ${long} `;
+
+}
+console.log(longStr(str))
+
+
+function CountWord(str) {
+  var Count = str.split(" ").length; 
+    return `words number is: ${Count}`;
+}
+console.log(CountWord(str))
+
+
+function CountVoy(str) {
+var Chars = str.split("");
+const voy=/[a,e,i,o,u,y]/g;
+if (Chars=str.match(voy)) {
+    var res= str.match(voy).length;
+    return `number of voyelle is: ${res}`
+}else{
+    return "pas de voyelle";
+}
+}
+
+console.log(CountVoy(str))
+          </script>
+</body>
+</html>

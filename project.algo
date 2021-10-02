@@ -1,0 +1,29 @@
+ALGORITHM algorithm_Calcul
+VAR
+    i,j:INTEGER;
+    result:INTEGER:=0;
+    str:STRING ;
+    Chars:CHAR;
+    voy:CHAR:=/[a,e,i,o,u,y]/g;
+BEGIN
+    FOR i FROM 1 TO  str.length step  DO
+       write(result := result+ str[i]);
+
+       write(str[i].lowerCase());
+
+       write(str[i].split(" ").length);
+       
+       FOR j FROM 1 TO str.length STEP step  DO
+           chars:= str.split("")
+           IF (Chars == str.match(voy)) THEN
+               write(str.match(voy).length)
+              
+               ELSE
+                write("voyelle not found")
+               
+           END_IF
+       END_FOR
+       
+    END_FOR
+    
+END
