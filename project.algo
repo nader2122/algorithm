@@ -7,22 +7,26 @@ VAR
     voy:CHAR:=/[a,e,i,o,u,y]/g;
 BEGIN
     FOR i FROM 1 TO  str.length step  DO
-       write(result := result+ str[i]);
+      read(str);
+      result := result+ str[i];
+      write (result);
 
-       write(str[i].lowerCase());
+      str[i]:=lower(str);
 
-       write(str[i].split(" ").length);
+       write(str[i]);
        
-       FOR j FROM 1 TO str.length STEP step  DO
-           chars:= str.split("")
+       chars:=split(str[i]);
+       write(str[i]);
+
            IF (Chars == str.match(voy)) THEN
+
                write(str.match(voy).length)
               
                ELSE
                 write("voyelle not found")
                
            END_IF
-       END_FOR
+       
        
     END_FOR
     
